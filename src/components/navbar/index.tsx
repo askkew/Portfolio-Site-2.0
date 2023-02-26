@@ -9,7 +9,7 @@ export interface NavBarTypes {
   handleToggleTheme: any,
 }
 
-const Navbar: FC<NavBarTypes> = ({ theme, handleToggleTheme }) => {
+const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
   const [all, setAll] = useState([]);
   const [about, setAbout] = useState([]);
   const [contact, setContact] = useState([]);
@@ -28,7 +28,7 @@ const Navbar: FC<NavBarTypes> = ({ theme, handleToggleTheme }) => {
         </div>
         </NavBtnTheme>
         <Bars />
-        <NavMenu>
+        <NavMenu className="checkbox-wrapper-54">
           <NavLink to='/'>
             All
           </NavLink>

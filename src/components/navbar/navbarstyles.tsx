@@ -27,6 +27,7 @@ export const NavLink = styled(Link)({
     color: 'gainsboro',
     fontWeight: 'bold',
     backgroundColor: 'rgb(44,44,46)',
+    transition: '0.4s',
     borderRadius: '50px',
   },
 });
@@ -48,7 +49,7 @@ export const Bars = styled(FaBars)({
 export const NavMenu = styled('div')({
   display: 'flex',
   alignItems: 'center',
-  background: 'rgb(13,13,14)',
+  // background: 'rgb(13,13,14)',
   borderRadius: '50px',
   height: '35px',
   '@media screen and (max-width: 768px)': {
