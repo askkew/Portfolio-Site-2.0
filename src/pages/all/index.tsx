@@ -1,5 +1,5 @@
 import { IconButton, Link } from '@mui/material';
-import { AllCard, TopContainer, IntroCard, AllContainer, WelcomeCard, TopLeftContainer, ToolIcons, StyledScrollButton, ToolIconLabel, GithubCard, LinkedInCard, EmailCard, IntroTitle, IntroDescription } from './allStyles';
+import { AllCard, TopContainer, IntroCard, AllContainer, WelcomeCard, TopLeftContainer, ToolIcons, StyledScrollButton, ToolIconLabel, GithubCard, LinkedInCard, EmailCard, IntroTitle, IntroDescription, IntroTitleName, CardTitle } from './allStyles';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { CustomStyledButton } from '../../components/button/buttonstyles';
@@ -10,14 +10,15 @@ const All = () => {
       <TopContainer>
         <TopLeftContainer>
           <IntroCard>
-            <img src="mecomputer.png" style={{height: '60%'}}/>
             <div>
-              <IntroTitle variant='h4'>Hello my name is Lucas Overbey!</IntroTitle>
-              <IntroDescription variant='h6'>I have been coding for almost 6 years but recently focused on web development near the end of my education at UTSA, where I graduated with a Bachelor of Science in Computer Science</IntroDescription>
-              <div>
-                <CustomStyledButton style={{margin: '0 5px 0 5px'}}>contact</CustomStyledButton>
-                <CustomStyledButton style={{margin: '0 5px 0 5px'}}>resume</CustomStyledButton>
-              </div>
+              <IntroTitle>Hello my name is,</IntroTitle>
+              <IntroTitleName>Lucas Overbey</IntroTitleName>
+              <IntroDescription variant='h6'>I have been coding for almost <strong>6 years</strong> but recently focused on web development near the end of my education at UTSA, where I graduated with a <strong>Bachelor of Science in Computer Science</strong></IntroDescription>
+            </div>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
+              <img src="mecomputer.png" style={{height: '60%'}}/>
+              <CustomStyledButton style={{margin: '5px 0 5px 0'}}>contact</CustomStyledButton>
+              <CustomStyledButton style={{margin: '5px 0 5px 0'}}>resume</CustomStyledButton>
             </div>
           </IntroCard>
           <IntroCard>
@@ -27,7 +28,7 @@ const All = () => {
           </IntroCard>
         </TopLeftContainer>
         <WelcomeCard>
-          <h3>Toolkit</h3>
+          <CardTitle>Toolkit</CardTitle>
           {
             ToolIcons.map((icon, index) => {
               return (

@@ -3,6 +3,20 @@
   --glow-color: hsl(213, 89%, 79%);
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 1rem;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .checkbox-wrapper-54 input[type="checkbox"] {
   visibility: hidden;
   display: none;

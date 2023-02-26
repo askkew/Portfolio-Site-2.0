@@ -46,7 +46,7 @@ export const IntroCard = styled(ContentCard)({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'top',
-  padding: '1rem',
+  padding: '2rem',
 });
 
 export const AllCard = styled(ContentCard)({
@@ -89,36 +89,100 @@ export const EmailCard = styled(ContentCard)({
 
 export const IntroTitle = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
-  fontSize: '2.1em',
-  fontWeight: '400',
+  fontSize: '1.8em',
+  fontWeight: '600',
 });
 
 export const IntroDescription = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
-  fontSize: '1.4em',
-  fontWeight: '400',
+  fontSize: '1.2em',
+  fontWeight: '500',
+});
+
+export const IntroTitleName = styled(Typography)({
+  fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
+  fontSize: '2.8em',
+  fontWeight: '600',
+});
+
+export const CardTitle = styled(Typography)({
+  fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
+  fontSize: '1.8em',
+  fontWeight: '600',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
 });
 
 //==================================================================================================
 
 const IconStyle = {
-  fontSize: 32,
+  fontSize: 37,
   marginRight: 10,
 }
 
+export const JSIcon = styled(SiJavascript)({
+  color: '#f0db4f',
+})
+
+export const TSIcon = styled(SiTypescript)({
+  color: '#007acc',
+})
+
+export const MySQLIcon = styled(DiMysql)({
+  color: '#00758f',
+})
+
+export const HTMLIcon = styled(FaHtml5)({
+  color: '#e34c26',
+})
+
+export const CSSIcon = styled(FaCss3Alt)({
+  color: '#264de4',
+})
+
+export const MongoIcon = styled(DiMongodb)({
+  color: '#47a248',
+})
+
+export const ReactIcon = styled(FaReact)({
+  color: '#61dafb',
+})
+
+export const ReduxIcon = styled(SiRedux)({
+  color: '#764abc',
+})
+
+export const NodeIcon = styled(FaNodeJs)({
+  color: '#339933',
+})
+
+export const PHPIcon = styled(DiPhp)({
+  color: '#777bb4',
+})
+
+export const BootstrapIcon = styled(FaBootstrap)({
+  color: '#563d7c',
+})
+
+export const JavaIcon = styled(FaJava)({
+  color: '#007396',
+})
+
 export const ToolIcons = [
-  <SiJavascript style={IconStyle} />,
-  <SiTypescript style={IconStyle} />,
-  <DiMysql style={IconStyle} />,
-  <FaHtml5 style={IconStyle} />,
-  <FaCss3Alt style={IconStyle} />,
-  <DiMongodb style={IconStyle} />,
-  <FaReact style={IconStyle} />,
-  <SiRedux style={IconStyle} />,
-  <FaNodeJs style={IconStyle} />,
-  <DiPhp style={IconStyle} />,
-  <FaBootstrap style={IconStyle} />,
-  <FaJava style={IconStyle} />,
+  <JSIcon style={IconStyle} />,
+  <TSIcon style={IconStyle} />,
+  <MySQLIcon style={IconStyle} />,
+  <HTMLIcon style={IconStyle} />,
+  <CSSIcon style={IconStyle} />,
+  <MongoIcon style={IconStyle} />,
+  <ReactIcon style={IconStyle} />,
+  <ReduxIcon style={IconStyle} />,
+  <NodeIcon style={IconStyle} />,
+  <PHPIcon style={IconStyle} />,
+  <BootstrapIcon style={IconStyle} />,
+  <JavaIcon style={IconStyle} />,
 ]
 
 export const ToolIconLabel = [
@@ -139,6 +203,6 @@ export const ToolIconLabel = [
 export const StyledScrollButton = styled(IconButton)({
   'font-family': '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   'font-size': '1em',
-  'font-weight': '400',
+  'font-weight': '650',
   'letter-spacing': '0.4em',
 });
