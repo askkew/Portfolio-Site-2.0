@@ -21,13 +21,19 @@ export const NavLink = styled(Link)({
   textDecoration: 'none',
   borderRadius: '50px',
   padding: '0 1rem 0 1rem',
+  margin: '0 0.35rem 0 0.35rem',
   // margin: '0.5rem',
   height: '80%',
   cursor: 'pointer',
+  fontWeight: 'bold',
+  backgroundImage: 'transparent',
+  backgroundSize: 'calc(100% + 20px) calc(100% + 20px)',
+  transition: '0.4s',
   '&.active': {
     color: 'gainsboro',
     fontWeight: 'bold',
-    backgroundColor: 'rgb(44,44,46)',
+    backgroundImage: 'linear-gradient(1deg, #8983f7, #a3dafb 99%)',
+    backgroundSize: 'calc(100% + 20px) calc(100% + 20px)',
     transition: '0.4s',
     borderRadius: '50px',
   },
@@ -50,7 +56,7 @@ export const Bars = styled(FaBars)({
 export const NavMenu = styled('div')({
   display: 'flex',
   alignItems: 'center',
-  background: 'rgb(13,13,14)',
+  background: '#303136',
   borderRadius: '50px',
   boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
   height: '35px',
@@ -93,3 +99,50 @@ export const NavBtnLink = styled(Link)({
 });
 
 export { Link };
+
+// <!-- HTML !-->
+// <button class="button-21" role="button">Button 21</button>
+
+// /* CSS */
+// .button-21 {
+//   align-items: center;
+//   appearance: none;
+//   background-color: #3EB2FD;
+//   background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+//   background-size: calc(100% + 20px) calc(100% + 20px);
+//   border-radius: 100px;
+//   border-width: 0;
+//   box-shadow: none;
+//   box-sizing: border-box;
+//   color: #FFFFFF;
+//   cursor: pointer;
+//   display: inline-flex;
+//   font-family: CircularStd,sans-serif;
+//   font-size: 1rem;
+//   height: auto;
+//   justify-content: center;
+//   line-height: 1.5;
+//   padding: 6px 20px;
+//   position: relative;
+//   text-align: center;
+//   text-decoration: none;
+//   transition: background-color .2s,background-position .2s;
+//   user-select: none;
+//   -webkit-user-select: none;
+//   touch-action: manipulation;
+//   vertical-align: top;
+//   white-space: nowrap;
+// }
+
+// .button-21:active,
+// .button-21:focus {
+//   outline: none;
+// }
+
+// .button-21:hover {
+//   background-position: -20px -20px;
+// }
+
+// .button-21:focus:not(:active) {
+//   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+// }

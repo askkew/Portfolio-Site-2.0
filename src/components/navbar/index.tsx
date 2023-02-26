@@ -3,6 +3,7 @@ import { primary } from "../../utils";
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, NavBtnTheme } from './navbarstyles';
 import "./index.css";
 import { FC } from "react";
+import { CustomStyledButton } from "../button/buttonstyles";
 
 export interface NavBarTypes {
   theme: any,
@@ -42,9 +43,7 @@ const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
             Contact
           </NavLink>
         </NavMenu>
-        <NavBtn>
-          <NavBtnLink style={{backgroundColor: primary}} to='/signin'>Sign In</NavBtnLink>
-        </NavBtn>
+        <CustomStyledButton>resume</CustomStyledButton>
       </Nav>
     </>
   );
