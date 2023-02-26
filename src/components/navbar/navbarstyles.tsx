@@ -19,6 +19,7 @@ export const NavLink = styled(Link)({
   display: 'flex',
   alignItems: 'center',
   textDecoration: 'none',
+  borderRadius: '50px',
   padding: '0 1rem 0 1rem',
   // margin: '0.5rem',
   height: '80%',
@@ -49,8 +50,9 @@ export const Bars = styled(FaBars)({
 export const NavMenu = styled('div')({
   display: 'flex',
   alignItems: 'center',
-  // background: 'rgb(13,13,14)',
+  background: 'rgb(13,13,14)',
   borderRadius: '50px',
+  boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
   height: '35px',
   '@media screen and (max-width: 768px)': {
     display: 'none',
