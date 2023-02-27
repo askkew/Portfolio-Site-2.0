@@ -173,30 +173,30 @@ export const JavaIcon = styled(FaJava)({
 export const ToolIcons = [
   <JSIcon style={IconStyle} />,
   <TSIcon style={IconStyle} />,
-  <MySQLIcon style={IconStyle} />,
   <HTMLIcon style={IconStyle} />,
   <CSSIcon style={IconStyle} />,
-  <MongoIcon style={IconStyle} />,
+  <BootstrapIcon style={IconStyle} />,
   <ReactIcon style={IconStyle} />,
   <ReduxIcon style={IconStyle} />,
+  <MongoIcon style={IconStyle} />,
   <NodeIcon style={IconStyle} />,
   <PHPIcon style={IconStyle} />,
-  <BootstrapIcon style={IconStyle} />,
+  <MySQLIcon style={IconStyle} />,
   <JavaIcon style={IconStyle} />,
 ]
 
 export const ToolIconLabel = [
   <span className="glowing-txt">JavaScript</span>,
   <span className="glowing-txt">TypeScript</span>,
-  <span className="glowing-txt">MySQL</span>,
   <span className="glowing-txt">HTML5</span>,
   <span className="glowing-txt">CSS3</span>,
-  <span className="glowing-txt">MongoDB</span>,
+  <span className="glowing-txt">Bootstrap</span>,
   <span className="glowing-txt">React</span>,
   <span className="glowing-txt">Redux</span>,
+  <span className="glowing-txt">MongoDB</span>,
   <span className="glowing-txt">NodeJS</span>,
   <span className="glowing-txt">PHP</span>,
-  <span className="glowing-txt">Bootstrap</span>,
+  <span className="glowing-txt">MySQL</span>,
   <span className="glowing-txt">Java</span>,
 ]
 

@@ -2,12 +2,14 @@ import styled from "@emotion/styled";
 import { Button } from "@mui/material";
 
 export const CustomStyledButton = styled(Button)({
-  background: 'linear-gradient(to bottom right, #EF4765, #FF9A5A)',
+  // background: 'linear-gradient(to bottom right, #EF4765, #FF9A5A)',
+  background: 'linear-gradient(to bottom right, #8983f7, #a3dafb)',
   border: 0,
   borderRadius: 12,
   color: 'white',
   cursor: 'pointer',
   display: 'inline-block',
+  boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '1rem',
   fontWeight: 500,
@@ -22,9 +24,11 @@ export const CustomStyledButton = styled(Button)({
   touchAction: 'manipulation',
   whiteSpace: 'nowrap',
   '&:focus': {
-    boxShadow: '0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5)',
+    // boxShadow: '0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5)',
+    boxShadow: '0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(137, 131, 247, 0.5), .125rem .125rem 1rem rgba(163, 218, 251, 0.5)',
   },
   '&:hover': {
-    boxShadow: '0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5)',
+    // boxShadow: '0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5)',
+    boxShadow: '0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(137, 131, 247, 0.5), .125rem .125rem 1rem rgba(163, 218, 251, 0.5)',
   },
 });

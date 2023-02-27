@@ -1,8 +1,10 @@
+import { AboutContainer } from "./aboutstyles"
+
 const About = () => {
   return (
-    <div>
+    <AboutContainer>
       <h1>About</h1>
-    </div>
+    </AboutContainer>
   )
 }
 

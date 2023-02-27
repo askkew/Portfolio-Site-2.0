@@ -5,7 +5,7 @@ import { primary } from '../../utils';
 
 export const Nav = styled('nav')({
   background: 'transparent',
-  height: '80px',
+  height: '120px',
   display: 'flex',
   justifyContent: 'space-between',
   flexDirection: 'row',
