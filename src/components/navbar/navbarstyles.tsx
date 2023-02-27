@@ -39,9 +39,10 @@ export const NavLink = styled(Link)(({theme}) => ({
   },
 }));
 
-export const Bars = styled(FaBars)({
+export const Bars = styled(FaBars)(({theme}) => ({
   display: 'none',
-  color: 'gainsboro',
+  color: theme.palette.mode === 'light' ? 'black' : 'gainsboro',
+  height: '45px',
   '@media screen and (max-width: 768px)': {
     display: 'block',
     position: 'absolute',
@@ -51,7 +52,7 @@ export const Bars = styled(FaBars)({
     fontSize: '1.8rem',
     cursor: 'pointer',
   },
-})
+}));
 
 export const NavMenu = styled('div')({
   display: 'flex',

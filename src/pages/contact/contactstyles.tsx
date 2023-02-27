@@ -52,6 +52,7 @@ export const ContactRightContainer = styled('div')({
 export const CustomInputField = styled(InputBase)({
   borderRadius: '50px',
   padding: '0.5rem',
+  paddingLeft: '1rem',
   margin: '0.5rem',
   width: '66%',
   boxShadow: 'rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px',

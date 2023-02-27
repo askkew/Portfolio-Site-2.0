@@ -11,11 +11,27 @@ export interface NavBarTypes {
 }
 
 const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
-  const [all, setAll] = useState([]);
-  const [about, setAbout] = useState([]);
-  const [contact, setContact] = useState([]);
-  const [projects, setProjects] = useState([]);
-  const [resume, setResume] = useState([]);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const showMobile = () => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  const showDesktop = () => {
+    if (window.innerWidth > 768) {
+      setIsDesktop(true);
+    } else {
+      setIsDesktop(false);
+    }
+  };
+
+  window.addEventListener("resize", showDesktop);
+  window.addEventListener("resize", showMobile);
 
   return (
     <>
@@ -43,7 +59,9 @@ const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
             Contact
           </NavLink>
         </NavMenu>
-        <CustomStyledButton>resume</CustomStyledButton>
+        {
+          isMobile ? null : <CustomStyledButton>resume</CustomStyledButton>
+        }
       </Nav>
     </>
   );

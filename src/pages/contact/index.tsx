@@ -1,9 +1,23 @@
 import { IconButton, Link } from "@mui/material"
+import { useState } from "react"
 import { CustomStyledButton } from "../../components/button/buttonstyles"
 import { EmailCard, GithubCard, LinkedInCard, StyledBSGithub, StyledBsLinkedin, StyledMdEmail } from "../all/allStyles"
 import { ContactCard, ContactContainer, ContactLeftContainer, ContactRightContainer, CustomInputField, SocialMediaContainer } from "./contactstyles"
 
 const Contact = () => {
+  const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
+  const [message, setMessage] = useState('')
+  const [emailSent, setEmailSent] = useState(false)
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    console.log('email: ', email)
+    console.log('name: ', name)
+    console.log('message: ', message)
+    setEmailSent(true)
+  }
+
   return (
     <ContactContainer>
       <ContactCard>
@@ -13,10 +27,12 @@ const Contact = () => {
         </ContactLeftContainer>
         <ContactRightContainer>
           <h1>Contact</h1>
-          <CustomInputField></CustomInputField>
-          <CustomInputField></CustomInputField>
-          <CustomInputField style={{height: '200px', borderRadius: '25px'}}></CustomInputField>
-          <CustomStyledButton style={{width: '100px', marginTop: '12px'}}>Submit</CustomStyledButton>
+          <CustomInputField value={name} placeholder="Name" onChange={(e) => setName(e.target.value)}></CustomInputField>
+          <CustomInputField value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></CustomInputField>
+          <CustomInputField value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} style={{height: '200px', borderRadius: '25px'}}></CustomInputField>
+          <CustomStyledButton onClick={handleSubmit} style={{width: '100px', marginTop: '12px'}}>Submit</CustomStyledButton>
+          {/* {!emailSent && <h2 style={{color: 'red', display: 'none' }}>Email Sent!</h2>}
+          {emailSent && <h2 style={{color: 'green'}}>Email Sent!</h2>} */}
         </ContactRightContainer>
       </ContactCard>
       <SocialMediaContainer>
