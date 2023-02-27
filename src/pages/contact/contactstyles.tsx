@@ -19,6 +19,10 @@ export const ContactCard = styled(ContentCard)({
   flexDirection: 'row',
   justifyContent: 'top',
   padding: '2rem',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+    height: '100%',
+  },
 });
 
 export const ContactLeftContainer = styled('div')({
@@ -28,6 +32,9 @@ export const ContactLeftContainer = styled('div')({
   justifyContent: 'top',
   width: '33%',
   margin: '0 auto',
+  '@media (max-width: 768px)': {
+    width: '100%',
+  },
 })
 
 export const ContactRightContainer = styled('div')({
@@ -37,6 +44,9 @@ export const ContactRightContainer = styled('div')({
   justifyContent: 'top',
   width: '66%',
   margin: '0 auto',
+  '@media (max-width: 768px)': {
+    width: '100%',
+  },
 })
 
 export const CustomInputField = styled(InputBase)({
@@ -47,3 +57,10 @@ export const CustomInputField = styled(InputBase)({
   boxShadow: 'rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px',
   backgroundColor: 'rgba(255, 255, 255, 0.15)',
 });
+
+export const SocialMediaContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+})

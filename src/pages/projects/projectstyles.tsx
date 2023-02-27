@@ -18,6 +18,7 @@ export const ProjectCard = styled(ContentCard)({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'top',
+  alignItems: 'center',
   padding: '2rem',
 });
 
@@ -34,16 +35,52 @@ export const ProjectLinkButtonGroup = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   margin: '0.5rem',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+  },
 });
 
 export const ProjectTitle = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '2rem',
   fontWeight: 500,
+  '@media (max-width: 768px)': {
+    fontSize: '1.5rem',
+  },
 });
 
 export const ProjectDescription = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '1rem',
   fontWeight: 500,
+  '@media (max-width: 768px)': {
+    fontSize: '0.8rem',
+  },
+});
+
+export const StyledMEDImg = styled('img')({
+  height: '100%',
+  objectFit: 'cover',
+  marginRight: '10px',
+  '@media (max-width: 768px)': {
+    height: '70%',
+  },
+});
+
+export const StyledTDSCImg = styled('img')({
+  height: '90%',
+  objectFit: 'cover',
+  marginRight: '10px',
+  '@media (max-width: 768px)': {
+    height: '60%',
+  },
+});
+
+export const StyledWeatherImg = styled('img')({
+  height: '100%',
+  objectFit: 'cover',
+  marginRight: '10px',
+  '@media (max-width: 768px)': {
+    height: '70%',
+  },
 });

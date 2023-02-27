@@ -12,10 +12,10 @@ import Contact from "./pages/contact";
 
 const darkTheme = createTheme({
   palette: {
+    mode: 'dark',
     background: {
       default: "rgb(34,34,34)"
     },
-    mode: 'dark',
     primary: {
       main: 'rgb(189,46,46)',
     },
@@ -27,10 +27,10 @@ const darkTheme = createTheme({
 
 const lightTheme = createTheme({
   palette: {
+    mode: 'light',
     background: {
       default: "#e4f0e2"
     },
-    mode: 'light',
     primary: {
       main: 'rgb(189,46,46)',
     },
@@ -43,8 +43,8 @@ const lightTheme = createTheme({
 function App() {
   const [theme, setTheme] = useState(lightTheme);
   const handleToggleTheme = () => {
-    if (theme?.palette?.mode === 'light') setTheme(darkTheme);
-    else setTheme(lightTheme)
+    if (theme?.palette?.mode === 'dark') setTheme(lightTheme);
+    else setTheme(darkTheme)
   }
 
   return (

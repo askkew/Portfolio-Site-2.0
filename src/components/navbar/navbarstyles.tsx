@@ -1,6 +1,6 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
-import styled from '@emotion/styled';
+import { styled } from "@mui/material/styles";
 import { primary } from '../../utils';
 
 export const Nav = styled('nav')({
@@ -14,7 +14,7 @@ export const Nav = styled('nav')({
   zIndex: 10,
 });
 
-export const NavLink = styled(Link)({
+export const NavLink = styled(Link)(({theme}) => ({
   color: 'gainsboro',
   display: 'flex',
   alignItems: 'center',
@@ -32,12 +32,12 @@ export const NavLink = styled(Link)({
   '&.active': {
     color: 'gainsboro',
     fontWeight: 'bold',
-    backgroundImage: 'linear-gradient(1deg, #8983f7, #a3dafb 99%)',
+    backgroundImage: theme.palette.mode === 'light' ? 'linear-gradient(to bottom right, #EF4765, #FF9A5A)' : 'linear-gradient(to bottom right, #8983f7, #a3dafb)',
     backgroundSize: 'calc(100% + 20px) calc(100% + 20px)',
     transition: '0.4s',
     borderRadius: '50px',
   },
-});
+}));
 
 export const Bars = styled(FaBars)({
   display: 'none',

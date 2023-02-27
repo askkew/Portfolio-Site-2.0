@@ -1,12 +1,12 @@
 import { CustomStyledButton } from "../../components/button/buttonstyles"
-import { ProjectCard, ProjectContainer, ProjectDescription, ProjectDetailsContainer, ProjectLinkButtonGroup, ProjectTitle } from "./projectstyles"
+import { ProjectCard, ProjectContainer, ProjectDescription, ProjectDetailsContainer, ProjectLinkButtonGroup, ProjectTitle, StyledMEDImg, StyledTDSCImg, StyledWeatherImg } from "./projectstyles"
 import { BsArrowUpRight } from "react-icons/bs"
 
 const Projects = () => {
   return (
     <ProjectContainer>
       <ProjectCard>
-        <img src="/medplusprimary.png" style={{height: '100%', marginRight: '10px'}}/>
+        <StyledMEDImg src="/medplusprimary.png"/>
         <ProjectDetailsContainer>
           <ProjectTitle>MedPlus</ProjectTitle>
           <ProjectDescription>MedPLUS specializes in providing innovative and comprehensive medical professional liability insurance products through financially secure, A.M. Best Rated insurance carriers.</ProjectDescription>
@@ -17,7 +17,7 @@ const Projects = () => {
         </ProjectDetailsContainer>
       </ProjectCard>
       <ProjectCard>
-        <img src="/TDSCprimary.png" style={{height: '90%', marginRight: '10px'}}/>
+        <StyledTDSCImg src="/TDSCprimary.png"/>
         <ProjectDetailsContainer>
           <ProjectTitle>TDSC</ProjectTitle>
           <ProjectDescription>TDSC is a shooting club operated out of Houston Texas that brings together gun enthusiasts for self defense classes and range days.</ProjectDescription>
@@ -28,7 +28,7 @@ const Projects = () => {
         </ProjectDetailsContainer>
       </ProjectCard>
       <ProjectCard>
-        <img src="/TDSCiphone14pro.png" style={{height: '100%', marginRight: '10px'}}/>
+        <StyledWeatherImg src="/TDSCiphone14pro.png"/>
         <ProjectDetailsContainer>
           <ProjectTitle>Weather app</ProjectTitle>
           <ProjectDescription>This is a basic MERN stack application that allows users to get the current weather details as well as the following 6 day forecast for any city.</ProjectDescription>

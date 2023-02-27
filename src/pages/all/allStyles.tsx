@@ -10,6 +10,8 @@ import { SiJavascript } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
 import { DiPhp } from 'react-icons/di'
 import { FaBootstrap } from 'react-icons/fa'
+import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { MdEmail } from "react-icons/md"
 import styled from "@emotion/styled";
 import { ContentCard } from "../../utils";
 import { IconButton, Typography } from '@mui/material'
@@ -63,6 +65,18 @@ export const GithubCard = styled(ContentCard)({
   width: '300px',
   height: '300px',
   backgroundColor: 'rgb(35,134,54)',
+  '@media (max-width: 768px)': {
+    width: '33%',
+    height: '132px',
+  },
+});
+
+export const StyledBSGithub = styled(BsGithub)({
+  fontSize: '6em',
+  color: 'white',
+  '@media (max-width: 768px)': {
+    fontSize: '3em',
+  },
 });
 
 export const LinkedInCard = styled(ContentCard)({
@@ -74,6 +88,18 @@ export const LinkedInCard = styled(ContentCard)({
   width: '300px',
   height: '300px',
   backgroundColor: '#0072b1',
+  '@media (max-width: 768px)': {
+    width: '33%',
+    height: '132px',
+  },
+});
+
+export const StyledBsLinkedin = styled(BsLinkedin)({
+  fontSize: '6em',
+  color: 'white',
+  '@media (max-width: 768px)': {
+    fontSize: '3em',
+  },
 });
 
 export const EmailCard = styled(ContentCard)({
@@ -85,6 +111,18 @@ export const EmailCard = styled(ContentCard)({
   width: '300px',
   height: '300px',
   backgroundColor: 'rgb(189,46,46)',
+  '@media (max-width: 768px)': {
+    width: '33%',
+    height: '132px',
+  },
+});
+
+export const StyledMdEmail = styled(MdEmail)({
+  fontSize: '9em',
+  color: 'white',
+  '@media (max-width: 768px)': {
+    fontSize: '4.3em',
+  },
 });
 
 export const IntroTitle = styled(Typography)({
