@@ -11,11 +11,11 @@ export const Nav = styled('nav')({
   flexDirection: 'row',
   alignItems: 'center',
   padding: '0.5rem calc((100vw - 1000px) / 2)',
-  zIndex: 10,
+  zIndex: 100,
 });
 
 export const NavLink = styled(Link)(({theme}) => ({
-  color: 'gainsboro',
+  color: theme.palette.mode === 'light' ? 'black' : 'gainsboro',
   display: 'flex',
   alignItems: 'center',
   textDecoration: 'none',
@@ -54,17 +54,17 @@ export const Bars = styled(FaBars)(({theme}) => ({
   },
 }));
 
-export const NavMenu = styled('div')({
+export const NavMenu = styled('div')(({theme}) => ({
   display: 'flex',
   alignItems: 'center',
-  background: '#303136',
+  background: theme.palette.mode === 'dark' ? '#303136' : 'white',
   borderRadius: '50px',
   boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
   height: '35px',
   '@media screen and (max-width: 768px)': {
     display: 'none',
   },
-});
+}));
 
 export const NavBtn = styled('nav')({
   display: 'flex',

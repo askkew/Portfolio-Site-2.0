@@ -1,6 +1,14 @@
+
+
+
+//----------------------------Todo--------------------------------
+
 add animations to navbar
 fix padding and margin for Navbar
 add animations to each page
 add burger NavMenu
 move resume button to navbar buttons
 change burger menu icon to x when opened
+
+//----------------------------Done--------------------------------
+

@@ -6,45 +6,53 @@ import { CustomStyledButton } from '../../components/button/buttonstyles';
 import Projects from '../projects';
 import Contact from '../contact';
 import { AboutContainer } from './aboutstyles';
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
   return (
     <AboutContainer>
       <TopContainer>
           <TopLeftContainer>
-            <IntroCard>
-              <div>
-                <IntroTitle>Hello my name is,</IntroTitle>
-                <IntroTitleName>Lucas Overbey</IntroTitleName>
-                <IntroDescription variant='h6'>I have been coding for almost <strong>6 years</strong> but recently focused on web development near the end of my education at UTSA, where I graduated with a <strong>Bachelor of Science in Computer Science</strong></IntroDescription>
-              </div>
-              <div style={{display: 'flex', flexDirection: 'column'}}>
-                <img src="mecomputer.png" style={{height: '60%'}}/>
-                <CustomStyledButton style={{margin: '5px 0 5px 0'}}>contact</CustomStyledButton>
-                <CustomStyledButton style={{margin: '5px 0 5px 0'}}>resume</CustomStyledButton>
-              </div>
-            </IntroCard>
-            <IntroCard>
-              <h1 style={{color: 'white'}}>MAP</h1>
-              {/* <img src="medplusprimary.png" style={{height: '50%'}}/>
-              <img src="TDSCprimary.png" style={{height: '50%'}}/> */}
-            </IntroCard>
+            <Fade top>
+              <IntroCard>
+                <div>
+                  <IntroTitle>Hello my name is,</IntroTitle>
+                  <IntroTitleName>Lucas Overbey</IntroTitleName>
+                  <IntroDescription variant='h6'>I have been coding for almost <strong>6 years</strong> but recently focused on web development near the end of my education at UTSA, where I graduated with a <strong>Bachelor of Science in Computer Science</strong></IntroDescription>
+                </div>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                  <img src="mecomputer.png" style={{height: '60%'}}/>
+                  <CustomStyledButton style={{margin: '5px 0 5px 0'}}>contact</CustomStyledButton>
+                  <CustomStyledButton style={{margin: '5px 0 5px 0'}}>resume</CustomStyledButton>
+                </div>
+              </IntroCard>
+            </Fade>
+            <Fade top>
+              <IntroCard>
+                <h1 style={{color: 'white'}}>MAP</h1>
+                {/* <img src="medplusprimary.png" style={{height: '50%'}}/>
+                <img src="TDSCprimary.png" style={{height: '50%'}}/> */}
+              </IntroCard>
+            </Fade>
           </TopLeftContainer>
-          <WelcomeCard>
-            <CardTitle>Toolkit</CardTitle>
-            {
-              ToolIcons.map((icon, index) => {
-                return (
-                  <StyledScrollButton disableRipple key={index}>
-                    {icon}
-                    {
-                      ToolIconLabel[index] && <span>{ToolIconLabel[index]}</span>
-                    }
-                  </StyledScrollButton>
-                )
-              })
-            }
-          </WelcomeCard>
+          <Fade top>
+            <WelcomeCard>
+              <CardTitle>Toolkit</CardTitle>
+                {
+                  ToolIcons.map((icon, index) => {
+                    return (
+                      <StyledScrollButton disableRipple key={index}>
+                        {icon}
+                        {
+                          ToolIconLabel[index] && <span>{ToolIconLabel[index]}</span>
+                        }
+                      </StyledScrollButton>
+                    )
+                  })
+                }
+            </WelcomeCard>
+          </Fade>
         </TopContainer>
         <TopContainer>
           {/* <GithubCard>
