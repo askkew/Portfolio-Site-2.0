@@ -10,7 +10,7 @@ import { SiJavascript } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
 import { DiPhp } from 'react-icons/di'
 import { FaBootstrap } from 'react-icons/fa'
-import styled from "@emotion/styled";
+import { styled } from "@mui/material/styles"
 import { ContentCard } from "../../utils";
 import { IconButton, Typography } from '@mui/material'
 import { AllContainer } from '../all/allStyles'

@@ -4,11 +4,13 @@
 //----------------------------Todo--------------------------------
 
 add animations to navbar
-fix padding and margin for Navbar
 add animations to each page
 add burger NavMenu
 move resume button to navbar buttons
 change burger menu icon to x when opened
+add map to about page
+add functionality to emailjs
 
 //----------------------------Done--------------------------------
 
+fix padding and margin for Navbar

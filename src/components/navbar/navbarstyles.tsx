@@ -2,6 +2,7 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import { styled } from "@mui/material/styles";
 import { primary } from '../../utils';
+import { Drawer, IconButton } from '@mui/material';
 
 export const Nav = styled('nav')({
   background: 'transparent',
@@ -25,7 +26,8 @@ export const NavLink = styled(Link)(({theme}) => ({
   // margin: '0.5rem',
   height: '80%',
   cursor: 'pointer',
-  fontWeight: 'bold',
+  fontWeight: '650',
+  fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   backgroundImage: 'transparent',
   backgroundSize: 'calc(100% + 20px) calc(100% + 20px)',
   transition: '0.4s',
@@ -46,7 +48,7 @@ export const Bars = styled(FaBars)(({theme}) => ({
   '@media screen and (max-width: 768px)': {
     display: 'block',
     position: 'absolute',
-    top: 0,
+    top: -46,
     right: 0,
     transform: 'translate(-100%, 75%)',
     fontSize: '1.8rem',
@@ -100,6 +102,32 @@ export const NavBtnLink = styled(Link)({
 });
 
 export { Link };
+
+export const MobileNavArea = styled('nav')({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "4rem",
+  padding: "2rem",
+})
+
+export const StyledIconButton = styled(IconButton)({
+  display: "none",
+  '@media (max-width: 1022px)': {
+    display: "flex",
+  },
+})
+
+export const StyledDrawer = styled(Drawer)({
+  '& .MuiBackdrop-root': {
+    backgroundColor: 'transparent !important',
+  },
+  '& .MuiPaper-root': {
+    backgroundColor: 'transparent !important',
+    backdropFilter: 'blur(20px)',
+  },
+})
 
 // <!-- HTML !-->
 // <button class="button-21" role="button">Button 21</button>
