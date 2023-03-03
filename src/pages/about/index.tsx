@@ -6,10 +6,32 @@ import { CustomStyledButton } from '../../components/button/buttonstyles';
 import Projects from '../projects';
 import Contact from '../contact';
 import { AboutContainer } from './aboutstyles';
+import GoogleMapReact from 'google-map-react'
+import { mapStyles } from './mapStyles'
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
+// 29.760986166760972, -95.37964722026524
+
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+const houstonLatLong = { lat: 29.760986166760972, lng: -95.37964722026524 }
+const mapCenter = { lat: 29.760986166760972, lng: -95.37964722026524 }
+
+const MyMarker = ({ text }: any) => (
+  <div>
+    <BsGithub fontSize='large' style={{color:'red'}}/>
+  </div>
+)
+
 const About = () => {
+
+  const handleMarkerClick = () => {
+    console.log('clicked')
+    window.open(
+      'https://www.google.com/maps/place/Houston,+TX/@29.778271,-95.452775,11z/data=!4m15!1m8!3m7!1s0x8640b8b4488d8501:0xca0d02def365053b!2sHouston,+TX!3b1!8m2!3d29.7604267!4d-95.3698028!16zL20vMDNsMm4!3m5!1s0x8640b8b4488d8501:0xca0d02def365053b!8m2!3d29.7604267!4d-95.3698028!16zL20vMDNsMm4'
+    )
+  }
+
   return (
     <AboutContainer>
       <TopContainer>
@@ -30,9 +52,25 @@ const About = () => {
             </Fade>
             <Fade left>
               <IntroCard>
-                <h1 style={{color: 'white'}}>MAP</h1>
-                {/* <img src="medplusprimary.png" style={{height: '50%'}}/>
-                <img src="TDSCprimary.png" style={{height: '50%'}}/> */}
+                <IntroTitle>This site is an active work in progress, Check back tomorrow for new updates!</IntroTitle>
+              {/* <GoogleMapReact
+                bootstrapURLKeys={{ key: String(apiKey) }}
+                
+                defaultCenter={ window.innerWidth > 600 ? mapCenter : houstonLatLong }
+                // zoom={14}
+                defaultZoom={15}
+                options={{
+                  disableDefaultUI: true,
+                  keyboardShortcuts: false,
+                  styles: mapStyles,
+                }}
+                onClick={handleMarkerClick}
+              >
+                <MyMarker
+                  lat={houstonLatLong.lat}
+                  lng={houstonLatLong.lng}
+                />
+              </GoogleMapReact> */}
               </IntroCard>
             </Fade>
           </TopLeftContainer>

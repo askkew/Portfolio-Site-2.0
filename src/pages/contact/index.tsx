@@ -30,10 +30,10 @@ const Contact = () => {
           </ContactLeftContainer>
           <ContactRightContainer>
             <h1>Contact</h1>
-            <CustomInputField value={name} placeholder="Name" onChange={(e) => setName(e.target.value)}></CustomInputField>
-            <CustomInputField value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></CustomInputField>
-            <CustomInputField value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} style={{height: '200px', borderRadius: '25px'}}></CustomInputField>
-            <CustomStyledButton onClick={handleSubmit} style={{width: '100px', marginTop: '12px'}}>Submit</CustomStyledButton>
+            <CustomInputField disabled={true} value={name} placeholder="Name" onChange={(e) => setName(e.target.value)}></CustomInputField>
+            <CustomInputField disabled={true} value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></CustomInputField>
+            <CustomInputField disabled={true} value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} style={{height: '200px', borderRadius: '25px'}}></CustomInputField>
+            <CustomStyledButton disabled={true} onClick={handleSubmit} style={{width: '100px', marginTop: '12px'}}>Submit</CustomStyledButton>
             {/* {!emailSent && <h2 style={{color: 'red', display: 'none' }}>Email Sent!</h2>}
             {emailSent && <h2 style={{color: 'green'}}>Email Sent!</h2>} */}
           </ContactRightContainer>

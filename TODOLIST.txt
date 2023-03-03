@@ -12,10 +12,10 @@ change burger menu icon to x when opened
 add map to about page
 add weather app picture
 add functionality to emailjs
-fix social button minsize
 
 //----------------------------Done--------------------------------
 
 fix padding and margin for Navbar
 add burger NavMenu
 move resume button to navbar buttons
+fix social button minsize
