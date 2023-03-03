@@ -27,6 +27,9 @@ export const AboutContainer = styled('div')({
 
 export const TopContainer = styled(AllContainer)({
   flexDirection: 'row',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+  },
 })
 
 export const TopLeftContainer = styled('div')({
@@ -39,6 +42,9 @@ export const TopLeftContainer = styled('div')({
 export const WelcomeCard = styled(ContentCard)({
   width: '300px',
   height: '700px',
+  '@media (max-width: 768px)': {
+    width: '100%',
+  },
 });
 
 export const IntroCard = styled(ContentCard)({
@@ -48,6 +54,10 @@ export const IntroCard = styled(ContentCard)({
   flexDirection: 'row',
   justifyContent: 'top',
   padding: '2rem',
+  '@media (max-width: 768px)': {
+    width: '100%',
+    height: '300px',
+  },
 });
 
 export const AllCard = styled(ContentCard)({
@@ -98,6 +108,9 @@ export const IntroDescription = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '1.2em',
   fontWeight: '500',
+  '@media (max-width: 768px)': {
+    fontSize: '1em',
+  },
 });
 
 export const IntroTitleName = styled(Typography)({

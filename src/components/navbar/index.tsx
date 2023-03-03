@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { primary } from "../../utils";
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, NavBtnTheme, StyledIconButton, StyledDrawer, MobileNavArea } from './navbarstyles';
+import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, NavBtnTheme, StyledIconButton, StyledDrawer, MobileNavArea, ResumeNavLink, MobileResumeNavLink } from './navbarstyles';
 import "./index.css";
 import { FC } from "react";
 import { CustomStyledButton } from "../button/buttonstyles";
@@ -68,11 +68,7 @@ const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
             <NavLink to='/contact'>
               Contact
             </NavLink>
-            {/* <Link to={'/resume'}>
-            {
-              isMobile ? null : <CustomStyledButton>resume</CustomStyledButton>
-            }
-            </Link> */}
+            <MobileResumeNavLink to={'/resume'}>resume</MobileResumeNavLink>
           </MobileNavArea>
         </StyledDrawer>
         <NavMenu className="checkbox-wrapper-54">
@@ -89,11 +85,7 @@ const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
             Contact
           </NavLink>
         </NavMenu>
-        {/* <Link to={'/resume'}>
-        {
-          isMobile ? null : <CustomStyledButton>resume</CustomStyledButton>
-        }
-        </Link> */}
+        <ResumeNavLink to={'/resume'}>resume</ResumeNavLink>
       </Nav>
     </>
   );

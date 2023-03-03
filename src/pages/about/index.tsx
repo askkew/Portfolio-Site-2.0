@@ -7,14 +7,14 @@ import Projects from '../projects';
 import Contact from '../contact';
 import { AboutContainer } from './aboutstyles';
 // @ts-ignore
-// import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
   return (
     <AboutContainer>
       <TopContainer>
           <TopLeftContainer>
-            {/* <Fade left> */}
+            <Fade left>
               <IntroCard>
                 <div>
                   <IntroTitle>Hello my name is,</IntroTitle>
@@ -27,16 +27,16 @@ const About = () => {
                   <CustomStyledButton style={{margin: '5px 0 5px 0'}}>resume</CustomStyledButton>
                 </div>
               </IntroCard>
-            {/* </Fade>
-            <Fade left> */}
+            </Fade>
+            <Fade left>
               <IntroCard>
                 <h1 style={{color: 'white'}}>MAP</h1>
                 {/* <img src="medplusprimary.png" style={{height: '50%'}}/>
                 <img src="TDSCprimary.png" style={{height: '50%'}}/> */}
               </IntroCard>
-            {/* </Fade> */}
+            </Fade>
           </TopLeftContainer>
-          {/* <Fade right> */}
+          <Fade right>
             <WelcomeCard>
               <CardTitle>Toolkit</CardTitle>
                 {
@@ -52,7 +52,7 @@ const About = () => {
                   })
                 }
             </WelcomeCard>
-          {/* </Fade> */}
+          </Fade>
         </TopContainer>
         <TopContainer>
           {/* <GithubCard>

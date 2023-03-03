@@ -9,7 +9,7 @@ import All from "./pages/all";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
-// import Resume from "./pages/resume";
+import Resume from "./pages/resume";
 
 const darkTheme = createTheme({
   palette: {
@@ -47,7 +47,6 @@ function App() {
     if (theme?.palette?.mode === 'dark') setTheme(lightTheme);
     else setTheme(darkTheme)
   }
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -58,7 +57,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
-          {/* <Route path='/resume' element={<Resume />} /> */}
+          <Route path='/resume' element={<Resume />} />
         </Routes>
       </Router>
 

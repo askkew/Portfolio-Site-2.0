@@ -2,12 +2,12 @@ import { CustomStyledButton } from "../../components/button/buttonstyles"
 import { ProjectCard, ProjectContainer, ProjectDescription, ProjectDetailsContainer, ProjectLinkButtonGroup, ProjectTitle, StyledMEDImg, StyledTDSCImg, StyledWeatherImg } from "./projectstyles"
 import { BsArrowUpRight } from "react-icons/bs"
 // @ts-ignore
-// import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
   return (
     <ProjectContainer>
-      {/* <Fade left> */}
+      <Fade left>
         <ProjectCard>
           <StyledMEDImg src="/medplusprimary.png"/>
           <ProjectDetailsContainer>
@@ -19,8 +19,8 @@ const Projects = () => {
             </ProjectLinkButtonGroup>
           </ProjectDetailsContainer>
         </ProjectCard>
-      {/* </Fade>
-      <Fade right> */}
+      </Fade>
+      <Fade right>
         <ProjectCard>
           <StyledTDSCImg src="/TDSCprimary.png"/>
           <ProjectDetailsContainer>
@@ -32,8 +32,8 @@ const Projects = () => {
             </ProjectLinkButtonGroup>
           </ProjectDetailsContainer>
         </ProjectCard>
-      {/* </Fade>
-      <Fade left> */}
+      </Fade>
+      <Fade left>
         <ProjectCard>
           <StyledWeatherImg src="/TDSCiphone14pro.png"/>
           <ProjectDetailsContainer>
@@ -45,8 +45,8 @@ const Projects = () => {
             </ProjectLinkButtonGroup>
           </ProjectDetailsContainer>
         </ProjectCard>
-      {/* </Fade>
-      <Fade right> */}
+      </Fade>
+      <Fade right>
         <ProjectCard>
           <StyledWeatherImg src="/techliteprimary.png"/>
           <ProjectDetailsContainer>
@@ -58,7 +58,7 @@ const Projects = () => {
             </ProjectLinkButtonGroup>
           </ProjectDetailsContainer>
         </ProjectCard>
-      {/* </Fade> */}
+      </Fade>
     </ProjectContainer>
   )
 }
