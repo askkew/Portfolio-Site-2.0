@@ -40,22 +40,22 @@ export const TopLeftContainer = styled('div')({
 });
 
 export const WelcomeCard = styled(ContentCard)({
-  width: '300px',
+  // width: '300px',
   height: '700px',
   '@media (max-width: 768px)': {
-    width: '100%',
+    // width: '100%',
   },
 });
 
 export const IntroCard = styled(ContentCard)({
-  width: '700px',
+  // width: '700px',
   height: '330px',
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'top',
   padding: '2rem',
   '@media (max-width: 768px)': {
-    width: '100%',
+    // width: '100%',
     height: '300px',
   },
 });
@@ -67,33 +67,36 @@ export const AllCard = styled(ContentCard)({
 
 export const GithubCard = styled(ContentCard)({
   padding: 0,
+  margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '300px',
+  width: '33%',
   height: '300px',
   backgroundColor: 'rgb(35,134,54)',
 });
 
 export const LinkedInCard = styled(ContentCard)({
   padding: 0,
+  margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '300px',
+  width: '33%',
   height: '300px',
   backgroundColor: '#0072b1',
 });
 
 export const EmailCard = styled(ContentCard)({
   padding: 0,
+  margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '300px',
+  width: '33%',
   height: '300px',
   backgroundColor: 'rgb(189,46,46)',
 });

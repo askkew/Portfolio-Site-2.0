@@ -5,12 +5,17 @@
 
 add animations to navbar
 add animations to each page
-add burger NavMenu
-move resume button to navbar buttons
 change burger menu icon to x when opened
+
+//IMPORTANT!!!!!!!!!!!
+
 add map to about page
+add weather app picture
 add functionality to emailjs
+fix social button minsize
 
 //----------------------------Done--------------------------------
 
 fix padding and margin for Navbar
+add burger NavMenu
+move resume button to navbar buttons

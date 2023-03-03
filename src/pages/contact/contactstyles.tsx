@@ -13,7 +13,6 @@ export const ContactContainer = styled('div')({
 })
 
 export const ContactCard = styled(ContentCard)({
-  width: '100%',
   height: '500px',
   display: 'flex',
   flexDirection: 'row',
@@ -65,4 +64,8 @@ export const SocialMediaContainer = styled('div')({
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
+  width: '100%',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+  },
 })

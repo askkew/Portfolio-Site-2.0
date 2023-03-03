@@ -13,7 +13,7 @@ export const ProjectContainer = styled('div')({
 })
 
 export const ProjectCard = styled(ContentCard)({
-  width: '100%',
+  // width: '100%',
   height: '300px',
   display: 'flex',
   flexDirection: 'row',

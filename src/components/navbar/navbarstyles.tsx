@@ -80,7 +80,9 @@ export const NavBtn = styled('nav')({
 export const NavBtnTheme = styled('nav')({
   display: 'flex',
   alignItems: 'center',
-  marginLeft: '24px',
+  '@media (max-width: 768px)': {
+    marginLeft: '24px',
+  },
 });
 
 export const NavBtnLink = styled(Link)({

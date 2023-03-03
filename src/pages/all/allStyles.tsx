@@ -65,10 +65,10 @@ export const GithubCard = styled(ContentCard)({
   width: '300px',
   height: '300px',
   backgroundColor: 'rgb(35,134,54)',
-  '@media (max-width: 768px)': {
-    width: '33%',
-    height: '132px',
-  },
+  // '@media (max-width: 768px)': {
+  //   minWidth: '33%',
+  //   height: '132px',
+  // },
 });
 
 export const StyledBSGithub = styled(BsGithub)({
@@ -88,10 +88,10 @@ export const LinkedInCard = styled(ContentCard)({
   width: '300px',
   height: '300px',
   backgroundColor: '#0072b1',
-  '@media (max-width: 768px)': {
-    width: '33%',
-    height: '132px',
-  },
+  // '@media (max-width: 768px)': {
+  //   minWidth: '33%',
+  //   height: '132px',
+  // },
 });
 
 export const StyledBsLinkedin = styled(BsLinkedin)({
@@ -111,10 +111,10 @@ export const EmailCard = styled(ContentCard)({
   width: '300px',
   height: '300px',
   backgroundColor: 'rgb(189,46,46)',
-  '@media (max-width: 768px)': {
-    width: '33%',
-    height: '132px',
-  },
+  // '@media (max-width: 768px)': {
+  //   minWidth: '33%',
+  //   height: '132px',
+  // },
 });
 
 export const StyledMdEmail = styled(MdEmail)({
