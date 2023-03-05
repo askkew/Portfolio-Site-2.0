@@ -3,7 +3,7 @@ import { AllCard, TopContainer, IntroCard, WelcomeCard, TopLeftContainer, ToolIc
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { CustomStyledButton } from '../../components/button/buttonstyles';
-import Projects from '../projects';
+import Projects from '../work';
 import Contact from '../contact';
 import { AboutContainer } from './aboutstyles';
 import GoogleMapReact from 'google-map-react'

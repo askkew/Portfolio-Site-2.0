@@ -62,8 +62,8 @@ const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
             <NavLink to='/about'>
               About
             </NavLink>
-            <NavLink to='/projects'>
-              Projects
+            <NavLink to='/work'>
+              Work
             </NavLink>
             <NavLink to='/contact'>
               Contact
@@ -78,8 +78,8 @@ const Navbar: FC<NavBarTypes> = ({ handleToggleTheme }) => {
           <NavLink to='/about'>
             About
           </NavLink>
-          <NavLink to='/projects'>
-            Projects
+          <NavLink to='/work'>
+            Work
           </NavLink>
           <NavLink to='/contact'>
             Contact

@@ -1,4 +1,4 @@
-import Projects from '../projects';
+import Projects from '../work';
 import Contact from '../contact';
 import About from '../about';
 import { AllContainer } from './allStyles';

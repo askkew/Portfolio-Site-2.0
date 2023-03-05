@@ -1,10 +1,10 @@
 import { CustomStyledButton } from "../../components/button/buttonstyles"
-import { ProjectCard, ProjectContainer, ProjectDescription, ProjectDetailsContainer, ProjectLinkButtonGroup, ProjectTitle, StyledMEDImg, StyledTDSCImg, StyledWeatherImg } from "./projectstyles"
+import { ProjectCard, ProjectContainer, ProjectDescription, ProjectDetailsContainer, ProjectLinkButtonGroup, ProjectTitle, StyledMEDImg, StyledTDSCImg, StyledWeatherImg } from "./workstyles"
 import { BsArrowUpRight } from "react-icons/bs"
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-const Projects = () => {
+const Work = () => {
   return (
     <ProjectContainer>
       <Fade left>
@@ -35,7 +35,7 @@ const Projects = () => {
       </Fade>
       <Fade left>
         <ProjectCard>
-          <StyledWeatherImg src="/TDSCiphone14pro.png"/>
+          <StyledWeatherImg src="/weatherapp.png"/>
           <ProjectDetailsContainer>
             <ProjectTitle>Weather app</ProjectTitle>
             <ProjectDescription>This is a basic MERN stack application that allows users to get the current weather details as well as the following 6 day forecast for any city.</ProjectDescription>
@@ -63,4 +63,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Work

@@ -7,7 +7,7 @@ import { useState } from "react";
 import Navbar from "./components/navbar";
 import All from "./pages/all";
 import About from "./pages/about";
-import Projects from "./pages/projects";
+import Work from "./pages/work";
 import Contact from "./pages/contact";
 import Resume from "./pages/resume";
 
@@ -55,7 +55,7 @@ function App() {
         <Routes>
           <Route path='/' element={<All />} />
           <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/work' element={<Work />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
         </Routes>
