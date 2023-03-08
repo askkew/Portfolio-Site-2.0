@@ -11,6 +11,8 @@ import GoogleMapReact from 'google-map-react'
 import { mapStyles } from './mapStyles'
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
+import { StyledBSGithub, StyledBsLinkedin, StyledMdEmail } from '../all/allStyles';
+import { SocialMediaContainer } from '../contact/contactstyles';
 
 // 29.760986166760972, -95.37964722026524
 
@@ -27,7 +29,6 @@ const MyMarker = ({ text }: any) => (
 const About = () => {
 
   const handleMarkerClick = () => {
-    console.log('clicked')
     window.open(
       'https://www.google.com/maps/place/Houston,+TX/@29.778271,-95.452775,11z/data=!4m15!1m8!3m7!1s0x8640b8b4488d8501:0xca0d02def365053b!2sHouston,+TX!3b1!8m2!3d29.7604267!4d-95.3698028!16zL20vMDNsMm4!3m5!1s0x8640b8b4488d8501:0xca0d02def365053b!8m2!3d29.7604267!4d-95.3698028!16zL20vMDNsMm4'
     )
@@ -94,27 +95,33 @@ const About = () => {
             </WelcomeCard>
           </Fade>
         </TopContainer>
-        <TopContainer>
-          {/* <GithubCard>
-            <IconButton>
-              <Link href="https://github.com/askkew" target="_blank" >
-                <BsGithub style={{color: 'white', fontSize: '90'}}/>
-              </Link>
-            </IconButton>
-          </GithubCard>
-          <LinkedInCard>
-            <IconButton>
-              <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
-                <BsLinkedin style={{color: 'white', fontSize: '90'}}/>
-              </Link>
-            </IconButton>
-          </LinkedInCard>
-          <EmailCard>
-            <IconButton onClick={() => window.open('mailto:lucasaoverbey@gmail.com')}>
-              <MdEmail style={{color: 'white', fontSize: '120'}}/>
-            </IconButton>
-          </EmailCard> */}
-        </TopContainer>
+        <SocialMediaContainer>
+          <Fade left>
+            <GithubCard>
+              <IconButton>
+                <Link href="https://github.com/askkew" target="_blank" >
+                  <StyledBSGithub />
+                </Link>
+              </IconButton>
+            </GithubCard>
+          </Fade>
+          <Fade bottom>
+            <LinkedInCard>
+              <IconButton>
+                <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
+                  <StyledBsLinkedin />
+                </Link>
+              </IconButton>
+            </LinkedInCard>
+          </Fade>
+          <Fade right>
+            <EmailCard>
+              <IconButton onClick={() => window.open('mailto:lucasaoverbey@gmail.com')}>
+                <StyledMdEmail />
+              </IconButton>
+            </EmailCard>
+          </Fade>
+        </SocialMediaContainer>
     </AboutContainer>
   )
 }
