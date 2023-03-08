@@ -8,7 +8,7 @@ export const ContentCard = styled(Card)(({theme}) => ({
   flexDirection: 'column',
   justifyContent: 'top',
   padding: '0.3rem',
-  margin: '1rem',
+  margin: '0.6rem',
   background: theme.palette.mode === 'dark' ? 'rgb(13,13,14)' : 'rgb(255,255,255)',
   borderRadius: '25px',
   boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',

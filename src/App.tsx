@@ -30,7 +30,7 @@ const lightTheme = createTheme({
   palette: {
     mode: 'light',
     background: {
-      default: "#e4f0e2"
+      default: "rgb(245,245,245)"
     },
     primary: {
       main: 'rgb(189,46,46)',

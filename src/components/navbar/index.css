@@ -50,8 +50,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(235,235,235);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgb(225,225,225);
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
   transition: .4s;
   border-radius: 30px;
 }

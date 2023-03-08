@@ -3,6 +3,7 @@ import { AllCard, TopContainer, IntroCard, WelcomeCard, TopLeftContainer, ToolIc
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { CustomStyledButton } from '../../components/button/buttonstyles';
+import { FaMapMarker } from 'react-icons/fa';
 import Projects from '../work';
 import Contact from '../contact';
 import { AboutContainer } from './aboutstyles';
@@ -19,7 +20,7 @@ const mapCenter = { lat: 29.760986166760972, lng: -95.37964722026524 }
 
 const MyMarker = ({ text }: any) => (
   <div>
-    <BsGithub fontSize='large' style={{color:'red'}}/>
+    <FaMapMarker fontSize='large' style={{color:'red'}}/>
   </div>
 )
 
@@ -52,25 +53,26 @@ const About = () => {
             </Fade>
             <Fade left>
               <IntroCard>
-                <IntroTitle>This site is an active work in progress, Check back tomorrow for new updates!</IntroTitle>
-              {/* <GoogleMapReact
-                bootstrapURLKeys={{ key: String(apiKey) }}
-                
-                defaultCenter={ window.innerWidth > 600 ? mapCenter : houstonLatLong }
-                // zoom={14}
-                defaultZoom={15}
-                options={{
-                  disableDefaultUI: true,
-                  keyboardShortcuts: false,
-                  styles: mapStyles,
-                }}
-                onClick={handleMarkerClick}
-              >
-                <MyMarker
-                  lat={houstonLatLong.lat}
-                  lng={houstonLatLong.lng}
-                />
-              </GoogleMapReact> */}
+                {/* <IntroTitle>This site is an active work in progress, Check back tomorrow for new updates!</IntroTitle> */}
+                <GoogleMapReact
+                  bootstrapURLKeys={{ key: String(apiKey) }}
+                  
+                  defaultCenter={ window.innerWidth > 600 ? mapCenter : houstonLatLong }
+                  // zoom={14}
+                  defaultZoom={10}
+                  options={{
+                    disableDefaultUI: true,
+                    keyboardShortcuts: false,
+                    styles: mapStyles,
+                  }}
+                  onClick={handleMarkerClick}
+                >
+                  <MyMarker
+                  //29.887135937537185, -95.5622099168847
+                    lat={29.887135937537185}
+                    lng={-95.5622099168847}
+                  />
+                </GoogleMapReact>
               </IntroCard>
             </Fade>
           </TopLeftContainer>

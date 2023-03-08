@@ -41,7 +41,7 @@ export const TopLeftContainer = styled('div')({
 
 export const WelcomeCard = styled(ContentCard)({
   // width: '300px',
-  height: '700px',
+  height: '680px',
   '@media (max-width: 768px)': {
     // width: '100%',
   },
@@ -135,7 +135,7 @@ export const CardTitle = styled(Typography)({
 //==================================================================================================
 
 const IconStyle = {
-  fontSize: 37,
+  fontSize: 36,
   marginRight: 10,
 }
 

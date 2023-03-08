@@ -9,6 +9,11 @@ export const mapStyles =  [
   {featureType: 'poi.government', stylers: [{visibility: 'off'}]},
   {featureType: 'poi.attraction', stylers: [{visibility: 'off'}]},
   // {featureType: 'highway.marker', stylers: [{visibility: 'off'}]},
+  // {featureType: 'road.local', stylers: [{visibility: 'off'}]},
+  {featureType: 'road.arterial', stylers: [{visibility: 'off'}]},
+  // {featureType: 'road.highway.label', stylers: [{visibility: 'off'}]},
+  // {featureType: 'road.highway.controlled_access', stylers: [{visibility: 'off'}]},
+  // {featureType: 'road', stylers: [{visibility: 'off'}]},
 
   {elementType: 'geometry', stylers: [{color: '#1B1B1A'}]},
   {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},

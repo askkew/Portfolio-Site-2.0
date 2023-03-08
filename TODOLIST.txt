@@ -12,6 +12,8 @@ change burger menu icon to x when opened
 add map to about page
 add weather app picture
 add functionality to emailjs
+remove button cursor from toolkit
+
 
 //----------------------------Done--------------------------------
 
