@@ -105,11 +105,15 @@ export const IntroTitle = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '1.8em',
   fontWeight: '600',
+  '@media (max-width: 768px)': {
+    fontSize: '1.4em',
+  },
 });
 
 export const IntroDescription = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '1.2em',
+  marginRight: '2px',
   fontWeight: '500',
   '@media (max-width: 768px)': {
     fontSize: '1em',
@@ -120,6 +124,9 @@ export const IntroTitleName = styled(Typography)({
   fontFamily: '-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif',
   fontSize: '2.8em',
   fontWeight: '600',
+  '@media (max-width: 768px)': {
+    fontSize: '2.2em',
+  },
 });
 
 export const CardTitle = styled(Typography)({

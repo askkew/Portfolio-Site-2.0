@@ -13,6 +13,7 @@ import { mapStyles } from './mapStyles'
 import Fade from 'react-reveal/Fade';
 import { StyledBSGithub, StyledBsLinkedin, StyledMdEmail } from '../all/allStyles';
 import { SocialMediaContainer } from '../contact/contactstyles';
+import { ContentCard } from '../../utils';
 
 // 29.760986166760972, -95.37964722026524
 
@@ -95,33 +96,8 @@ const About = () => {
             </WelcomeCard>
           </Fade>
         </TopContainer>
-        <SocialMediaContainer>
-          <Fade left>
-            <GithubCard>
-              <IconButton>
-                <Link href="https://github.com/askkew" target="_blank" >
-                  <StyledBSGithub />
-                </Link>
-              </IconButton>
-            </GithubCard>
-          </Fade>
-          <Fade bottom>
-            <LinkedInCard>
-              <IconButton>
-                <Link href="https://www.linkedin.com/in/luke-overbey-37b342235/" target="_blank" >
-                  <StyledBsLinkedin />
-                </Link>
-              </IconButton>
-            </LinkedInCard>
-          </Fade>
-          <Fade right>
-            <EmailCard>
-              <IconButton onClick={() => window.open('mailto:lucasaoverbey@gmail.com')}>
-                <StyledMdEmail />
-              </IconButton>
-            </EmailCard>
-          </Fade>
-        </SocialMediaContainer>
+        <ContentCard style={{height: '400px', width: '100%', padding: '40px', marginBottom: '40px'}}>
+        </ContentCard>
     </AboutContainer>
   )
 }
