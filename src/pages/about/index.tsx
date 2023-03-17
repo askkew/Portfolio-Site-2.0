@@ -1,5 +1,5 @@
 import { IconButton, Link } from '@mui/material';
-import { AllCard, TopContainer, IntroCard, WelcomeCard, TopLeftContainer, ToolIcons, StyledScrollButton, ToolIconLabel, GithubCard, LinkedInCard, EmailCard, IntroTitle, IntroDescription, IntroTitleName, CardTitle } from './aboutstyles';
+import { AllCard, TopContainer, IntroCard, WelcomeCard, TopLeftContainer, ToolIcons, StyledScrollButton, ToolIconLabel, GithubCard, LinkedInCard, EmailCard, IntroTitle, IntroDescription, IntroTitleName, CardTitle, ContactNavLinkAbout, ResumeNavLinkAbout } from './aboutstyles';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { CustomStyledButton } from '../../components/button/buttonstyles';
@@ -14,6 +14,7 @@ import Fade from 'react-reveal/Fade';
 import { StyledBSGithub, StyledBsLinkedin, StyledMdEmail } from '../all/allStyles';
 import { SocialMediaContainer } from '../contact/contactstyles';
 import { ContentCard } from '../../utils';
+import { ResumeNavLink } from '../../components/navbar/navbarstyles';
 
 // 29.760986166760972, -95.37964722026524
 
@@ -48,8 +49,10 @@ const About = () => {
                 </div>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                   <img src="mecomputer.png" style={{height: '60%'}}/>
-                  <CustomStyledButton style={{margin: '5px 0 5px 0'}}>contact</CustomStyledButton>
-                  <CustomStyledButton style={{margin: '5px 0 5px 0'}}>resume</CustomStyledButton>
+                  {/* <ResumeNavLink to={'/resume'}>resume</ResumeNavLink> */}
+                  <ContactNavLinkAbout to={'/contact'}>contact</ContactNavLinkAbout>
+                  <ResumeNavLinkAbout to={'/resume'}>resume</ResumeNavLinkAbout>
+                  {/* <CustomStyledButton style={{margin: '5px 0 5px 0'}}>resume</CustomStyledButton> */}
                 </div>
               </IntroCard>
             </Fade>
@@ -94,7 +97,7 @@ const About = () => {
             </WelcomeCard>
           </Fade>
         </TopContainer>
-        <ContentCard style={{height: '400px', width: '98%', padding: '40px', marginBottom: '40px'}}>
+        <ContentCard style={{height: '200px', width: '98%', padding: '40px'}}>
           <IntroTitle>This site is an active work in progress, Check back tomorrow for new updates!</IntroTitle>
         </ContentCard>
     </AboutContainer>
