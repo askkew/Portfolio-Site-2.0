@@ -55,7 +55,6 @@ const About = () => {
             </Fade>
             <Fade left>
               <IntroCard>
-                {/* <IntroTitle>This site is an active work in progress, Check back tomorrow for new updates!</IntroTitle> */}
                 <GoogleMapReact
                   bootstrapURLKeys={{ key: String(apiKey) }}
                   
@@ -70,7 +69,6 @@ const About = () => {
                   onClick={handleMarkerClick}
                 >
                   <MyMarker
-                  //29.887135937537185, -95.5622099168847
                     lat={29.887135937537185}
                     lng={-95.5622099168847}
                   />
@@ -96,7 +94,8 @@ const About = () => {
             </WelcomeCard>
           </Fade>
         </TopContainer>
-        <ContentCard style={{height: '400px', width: '100%', padding: '40px', marginBottom: '40px'}}>
+        <ContentCard style={{height: '400px', width: '98%', padding: '40px', marginBottom: '40px'}}>
+          <IntroTitle>This site is an active work in progress, Check back tomorrow for new updates!</IntroTitle>
         </ContentCard>
     </AboutContainer>
   )

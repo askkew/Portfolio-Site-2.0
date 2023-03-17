@@ -59,6 +59,18 @@ const Work = () => {
           </ProjectDetailsContainer>
         </ProjectCard>
       </Fade>
+      <Fade left>
+        <ProjectCard>
+          <StyledWeatherImg src="/jobtracker.png"/>
+          <ProjectDetailsContainer>
+            <ProjectTitle>Job Tracker</ProjectTitle>
+            <ProjectDescription>This is a basic MERN stack application utilizing a mongoDB database to store the jobs that I am applying for.</ProjectDescription>
+            <ProjectLinkButtonGroup>
+              <CustomStyledButton style={{height: '50px'}} href="https://github.com/askkew/Job-Tracker">View github repo <BsArrowUpRight /></CustomStyledButton>
+            </ProjectLinkButtonGroup>
+          </ProjectDetailsContainer>
+        </ProjectCard>
+      </Fade>
     </ProjectContainer>
   )
 }
