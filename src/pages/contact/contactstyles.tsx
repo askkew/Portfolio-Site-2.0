@@ -69,3 +69,16 @@ export const SocialMediaContainer = styled('div')({
     flexDirection: 'column',
   },
 })
+
+export const AlertBox = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '350px',
+  height: '120px',
+  backgroundColor: 'rgba(255, 255, 255, 0.15)',
+  borderRadius: '50px',
+  // margin: '0.5rem',
+  padding: '1rem',
+})

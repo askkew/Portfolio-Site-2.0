@@ -2,7 +2,7 @@ import { IconButton, Link } from "@mui/material"
 import { useState } from "react"
 import { CustomStyledButton } from "../../components/button/buttonstyles"
 import { EmailCard, GithubCard, LinkedInCard, StyledBSGithub, StyledBsLinkedin, StyledMdEmail } from "../all/allStyles"
-import { ContactCard, ContactContainer, ContactLeftContainer, ContactRightContainer, CustomInputField, SocialMediaContainer } from "./contactstyles"
+import { AlertBox, ContactCard, ContactContainer, ContactLeftContainer, ContactRightContainer, CustomInputField, SocialMediaContainer } from "./contactstyles"
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
@@ -30,6 +30,9 @@ const Contact = () => {
           </ContactLeftContainer>
           <ContactRightContainer>
             <h1>Contact</h1>
+            <AlertBox>
+              <h4 style={{margin: '1rem'}}>ATTENTION: EmailJS is down for me so my email form does not currently work, please use the email button below to reach out to me!</h4>
+            </AlertBox>
             <CustomInputField disabled={true} value={name} placeholder="Name" onChange={(e) => setName(e.target.value)}></CustomInputField>
             <CustomInputField disabled={true} value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></CustomInputField>
             <CustomInputField disabled={true} value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} style={{height: '200px', borderRadius: '25px'}}></CustomInputField>
